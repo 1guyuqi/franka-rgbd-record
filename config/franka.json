@@ -1,0 +1,10 @@
+{
+  "urdf": "model/fr3_franka_hand.urdf",
+  "ee_frame": "fr3_hand_tcp",
+  "tol": 1e-05,
+  "max_iter": 300,
+  "step_size": 1.0,
+  "damping": 1e-06,
+  "reference_frame": "LOCAL",
+  "verbose": false
+}

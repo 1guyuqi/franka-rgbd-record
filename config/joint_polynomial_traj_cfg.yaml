@@ -1,0 +1,19 @@
+# Joint trajectory configuration
+# ["cubic", "quintic", "trapezoidal"]
+
+joint_polynomial:
+  interpolation_type: "quintic"
+  dt: 0.02
+  max_velocity: 0.5  # rad/s for joints
+  max_acceleration: 0.5  # rad/s^2 for joints
+  enable_motion: false
+
+# Single arm configuration
+buffer:
+  size: 100
+  dim: 7  # 7 joints
+
+# Dual arm configuration  
+duo_buffer:
+  size: 100
+  dim: 14  # 14 joints (7+7)

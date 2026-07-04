@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Captured data and local calibration
+data/
+*.ply
+cam2base.txt
+cam2base.npy
+cam2base.local.*
+
+# Local configs (committed templates use *.example.json)
+config/anygrasp_realsense_config.json
+config/*local*
+
+# Optional third-party SDKs (install separately)
+anygrasp_sdk/
+sam3/
+checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,45 @@
+{
+  "output": {
+    "out_dir": "./data",
+    "vis_o3d": true,
+    "save_cloud_base_ply": true
+  },
+  "cam2base": [
+    [1.0, 0.0, 0.0, 0.0],
+    [0.0, 1.0, 0.0, 0.0],
+    [0.0, 0.0, 1.0, 0.0],
+    [0.0, 0.0, 0.0, 1.0]
+  ],
+  "realsense": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "warmup_frames": 15,
+    "hole_filling_level": 1,
+    "auto_exposure": true,
+    "emitter": true
+  },
+  "cloud": {
+    "depth_min_m": 0.3,
+    "depth_max_m": 1.5,
+    "workspace_lims": [-0.25, 0.25, -0.25, 0.25, 0.05, 1.2],
+    "max_points": 250000
+  },
+  "anygrasp": {
+    "sdk_path": "/path/to/anygrasp_sdk",
+    "checkpoint_path": "/path/to/anygrasp_sdk/grasp_detection/log/checkpoint_detection.tar",
+    "max_gripper_width": 0.1,
+    "gripper_height": 0.03,
+    "top_down_grasp": true,
+    "dense_grasp": false,
+    "collision_detection": true,
+    "apply_object_mask": true
+  },
+  "sam3": {
+    "repo_path": "/path/to/sam3",
+    "checkpoint_path": "/path/to/sam3/checkpoint/sam3.pt",
+    "prompt": "object",
+    "mask_threshold": 0.5,
+    "mask_erode": 0
+  }
+}
